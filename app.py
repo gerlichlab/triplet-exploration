@@ -170,4 +170,4 @@ def update_obsexp(region, binsize, offset, slider_val):
 # start app
 
 if __name__ == "__main__":
-    app.run_server()
+    app.run_server(port=8050)
