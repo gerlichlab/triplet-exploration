@@ -1,0 +1,10 @@
+version: "3"
+
+services:
+    dash-server:
+        container_name: dash-server
+        ports:
+            - "8050:8050"
+        build:
+            context: "."
+        image: dash-server:latest
