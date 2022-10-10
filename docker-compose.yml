@@ -5,6 +5,8 @@ services:
         container_name: dash-server
         ports:
             - "8050:8050"
+        volumes:
+            - ${DATA_DIR}:/app/data
         build:
             context: "."
         image: dash-server:latest
