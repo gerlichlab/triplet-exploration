@@ -9,7 +9,7 @@ import plotly.express as px
 # parse data
 
 data = parse_directory("./data/pileups")
-regions = list(data.keys())
+regions = sorted(list(data.keys()))
 binsizes = list(data[regions[0]].keys())
 offsets = sorted(list(data[regions[0]][binsizes[0]].keys()), key=lambda x: int(x))
 
