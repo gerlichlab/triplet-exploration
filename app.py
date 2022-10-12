@@ -1,4 +1,3 @@
-from cProfile import label
 import dash
 from dash import dcc, html, Input, Output
 import pandas as pd
@@ -37,7 +36,7 @@ app.layout = html.Div(
             children=[
                 html.H1(children="Triplet Pixels",className="header-title"),
                 html.P(
-                    children="Analyze the distribution of triplet pixels around regions of interest",className="header-description"
+                    children="Analyze the distribution of triplet pixels around regions of interest!",className="header-description"
                 )
             ],
             className="header"
